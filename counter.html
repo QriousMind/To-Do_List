@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Example</title>
+</head>
+<body>
+    <h1 id="heading-id">This is my webpage</h1>
+    <p id="counter-display">Counter: 0</p>
+    <button id="button-id" type="submit">Click Me</button>
+</body>
+<script>
+    
+    let count = 0;
+    
+    const button = document.getElementById("button-id");
+    const display = document.getElementById("counter-display");
+
+    function incrementCounter() {
+        count++;
+        display.textContent = "Counter: " + count;
+    }
+    
+    button.addEventListener('click', incrementCounter);
+</script>
+</html>
